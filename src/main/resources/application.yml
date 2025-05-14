@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: otel-spring-boot-starter-sandbox
