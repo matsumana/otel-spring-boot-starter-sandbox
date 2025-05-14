@@ -1,3 +1,23 @@
 spring:
   application:
     name: otel-spring-boot-starter-sandbox
+
+otel:
+  exporter:
+    otlp:
+      endpoint: http://localhost:4317
+      protocol: grpc
+  metrics:
+    exporter: otlp
+  metric:
+    export:
+      interval: 15s
+  traces:
+    exporter: otlp
+  logs:
+    exporter: none
+  resource:
+    attributes:
+      service.name: ${spring.application.name}
+      service.version: 0.0.1-SNAPSHOT
+      deployment.environment: local
