@@ -24,7 +24,7 @@ Launch the otel-collector and Prometheus server using Docker Compose.
 
 ```
 $ cd infra
-$ docker compose up -d
+$ docker compose up
 ```
 
 Launch the app using Gradle.
