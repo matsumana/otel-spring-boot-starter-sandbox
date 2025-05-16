@@ -1,5 +1,6 @@
 [versions]
 kotlin = "1.9.25"
+micrometerRegistryOtlp = "1.14.6"
 
 [plugins]
 springBoot = { id = "org.springframework.boot", version = "3.4.5" }
@@ -9,3 +10,4 @@ kotlinPluginSpring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = 
 
 [libraries]
 otelBom = { module = "io.opentelemetry.instrumentation:opentelemetry-instrumentation-bom", version = "2.15.0" }
+micrometerRegistryOtlp = { module = "io.micrometer:micrometer-registry-otlp", version.ref = "micrometerRegistryOtlp" }
