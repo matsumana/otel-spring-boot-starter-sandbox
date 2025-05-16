@@ -9,7 +9,7 @@ The app's metrics collected by OpenTelemetry are saved in the Prometheus server 
 ```
 this app
   |
-  | (send metrics and traces using gRPC)
+  | (send metrics via HTTP and traces via gRPC)
   ↓
 otel-collector (container)
   ↑
