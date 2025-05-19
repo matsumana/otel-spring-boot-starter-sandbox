@@ -12,6 +12,8 @@ exporters:
   debug:
   prometheus:
     endpoint: 0.0.0.0:8889
+  zipkin:
+    endpoint: http://zipkin:9411/api/v2/spans
 
 service:
   pipelines:
@@ -22,4 +24,4 @@ service:
     traces:
       receivers: [ otlp ]
       processors: [ ]
-      exporters: [ debug ]
+      exporters: [ debug, zipkin ]
