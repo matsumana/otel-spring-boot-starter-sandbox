@@ -9,6 +9,11 @@ management:
     web:
       exposure:
         include: health,info
+  observations:
+    annotations:
+      # Enable observability annotations like @Timed, @Counted, @Gauge, etc.
+      # https://docs.spring.io/spring-boot/reference/actuator/observability.html#actuator.observability.annotations
+      enabled: true
   metrics:
     distribution:
       percentiles-histogram:

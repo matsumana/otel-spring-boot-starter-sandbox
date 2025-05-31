@@ -30,6 +30,10 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.springframework.boot:spring-boot-starter-actuator")
     implementation("io.opentelemetry.instrumentation:opentelemetry-spring-boot-starter")
+
+    // Enable observability annotations like @Timed, @Counted, @Gauge, etc.
+    implementation("org.springframework.boot:spring-boot-starter-aop")
+
     implementation(libs.micrometerRegistryOtlp)
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
